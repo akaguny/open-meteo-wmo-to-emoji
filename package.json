@@ -1,0 +1,61 @@
+{
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "open-meteo",
+    "wmo"
+  ],
+  "files": [
+    "dist",
+    "dist/**",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "deploy": "np",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@akaguny/open-meteo-wmo-to-emoji",
+  "author": "akaguny",
+  "module": "dist/open-meteo-wmo-to-emoji.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/open-meteo-wmo-to-emoji.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/open-meteo-wmo-to-emoji.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.1.2",
+    "husky": "^9.0.11",
+    "np": "^10.0.5",
+    "size-limit": "^11.1.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.6.2",
+    "typescript": "^3.9.10"
+  }
+}
