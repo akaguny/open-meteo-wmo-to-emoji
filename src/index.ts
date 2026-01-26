@@ -28,30 +28,38 @@ export function openWeatherWMOToEmoji(
       }
       if (!daylite) {
         return {
-          value: "🌤️🌙",
+          value: "🌙☁️",
           originalNumericCode: 1,
           description: "Mainly clear",
         };
       }
     case 2:
       return {
-        value: "☁️",
+        value: "⛅",
         originalNumericCode: 2,
         description: "Partly cloudy",
       };
     case 3:
       if (daylite) {
-        return { value: "🌥️", originalNumericCode: 3, description: "Overcast" };
+        return {
+          value: "🌥️☁️",
+          originalNumericCode: 3,
+          description: "Overcast"
+        };
       }
       if (!daylite) {
         return {
-          value: "☁️🌙",
+          value: "🌙☁️☁️",
           originalNumericCode: 3,
           description: "Overcast",
         };
       }
     case 45:
-      return { value: "🌫️", originalNumericCode: 45, description: "Fog" };
+      return {
+        value: "🌫️",
+        originalNumericCode: 45,
+        description: "Fog"
+      };
     case 48:
       return {
         value: "🌫️❄️",
@@ -66,13 +74,13 @@ export function openWeatherWMOToEmoji(
       };
     case 53:
       return {
-        value: "🌧️",
+        value: "🌧️💧",
         originalNumericCode: 53,
         description: "Drizzle: Moderate",
       };
     case 55:
       return {
-        value: "🌧️",
+        value: "🌧️💦",
         originalNumericCode: 55,
         description: "Drizzle: Dense intensity",
       };
@@ -132,13 +140,13 @@ export function openWeatherWMOToEmoji(
       };
     case 75:
       return {
-        value: "🌨️",
+        value: "🌨️❄️",
         originalNumericCode: 75,
         description: "Snow fall: Heavy intensity",
       };
     case 77:
       return {
-        value: "🌨️",
+        value: "❄️",
         originalNumericCode: 77,
         description: "Snow grains",
       };
@@ -193,7 +201,7 @@ export function openWeatherWMOToEmoji(
     default:
       return {
         value: "🤷‍♂️",
-        originalNumericCode: -1,
+        originalNumericCode: weatherCode,
         description: "Unknown weather code",
       };
   }
