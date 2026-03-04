@@ -9,203 +9,203 @@ function openWeatherWMOToEmoji(weatherCode, daylite) {
     case 0:
       if (daylite) {
         return {
-          value: "☀️",
+          value: '☀️',
           originalNumericCode: 0,
-          description: "Clear sky"
+          description: 'Clear sky'
         };
       }
       if (!daylite) {
         return {
-          value: "🌙",
+          value: '🌙',
           originalNumericCode: 0,
-          description: "Clear sky"
+          description: 'Clear sky'
         };
       }
     case 1:
       if (daylite) {
         return {
-          value: "🌤️",
+          value: '🌤️',
           originalNumericCode: 1,
-          description: "Mainly clear"
+          description: 'Mainly clear'
         };
       }
       if (!daylite) {
         return {
-          value: "🌙☁️",
+          value: '🌙☁️',
           originalNumericCode: 1,
-          description: "Mainly clear"
+          description: 'Mainly clear'
         };
       }
     case 2:
       return {
-        value: "⛅",
+        value: '⛅',
         originalNumericCode: 2,
-        description: "Partly cloudy"
+        description: 'Partly cloudy'
       };
     case 3:
       if (daylite) {
         return {
-          value: "🌥️☁️",
+          value: '🌥️☁️',
           originalNumericCode: 3,
-          description: "Overcast"
+          description: 'Overcast'
         };
       }
       if (!daylite) {
         return {
-          value: "🌙☁️☁️",
+          value: '🌙☁️☁️',
           originalNumericCode: 3,
-          description: "Overcast"
+          description: 'Overcast'
         };
       }
     case 45:
       return {
-        value: "🌫️",
+        value: '🌫️',
         originalNumericCode: 45,
-        description: "Fog"
+        description: 'Fog'
       };
     case 48:
       return {
-        value: "🌫️❄️",
+        value: '🌫️❄️',
         originalNumericCode: 48,
-        description: "Depositing rime fog"
+        description: 'Depositing rime fog'
       };
     case 51:
       return {
-        value: "🌧️",
+        value: '🌧️',
         originalNumericCode: 51,
-        description: "Drizzle: Light"
+        description: 'Drizzle: Light'
       };
     case 53:
       return {
-        value: "🌧️💧",
+        value: '🌧️💧',
         originalNumericCode: 53,
-        description: "Drizzle: Moderate"
+        description: 'Drizzle: Moderate'
       };
     case 55:
       return {
-        value: "🌧️💦",
+        value: '🌧️💦',
         originalNumericCode: 55,
-        description: "Drizzle: Dense intensity"
+        description: 'Drizzle: Dense intensity'
       };
     case 56:
       return {
-        value: "🌨️",
+        value: '🌨️',
         originalNumericCode: 56,
-        description: "Freezing Drizzle: Light"
+        description: 'Freezing Drizzle: Light'
       };
     case 57:
       return {
-        value: "🌨️",
+        value: '🌨️',
         originalNumericCode: 57,
-        description: "Freezing Drizzle: Dense intensity"
+        description: 'Freezing Drizzle: Dense intensity'
       };
     case 61:
       return {
-        value: "🌦️",
+        value: '🌦️',
         originalNumericCode: 61,
-        description: "Rain: Slight"
+        description: 'Rain: Slight'
       };
     case 63:
       return {
-        value: "🌧️",
+        value: '🌧️',
         originalNumericCode: 63,
-        description: "Rain: Moderate"
+        description: 'Rain: Moderate'
       };
     case 65:
       return {
-        value: "🌧️",
+        value: '🌧️',
         originalNumericCode: 65,
-        description: "Rain: Heavy intensity"
+        description: 'Rain: Heavy intensity'
       };
     case 66:
       return {
-        value: "🌧️",
+        value: '🌧️',
         originalNumericCode: 66,
-        description: "Freezing Rain: Light"
+        description: 'Freezing Rain: Light'
       };
     case 67:
       return {
-        value: "🌧️",
+        value: '🌧️',
         originalNumericCode: 67,
-        description: "Freezing Rain: Heavy intensity"
+        description: 'Freezing Rain: Heavy intensity'
       };
     case 71:
       return {
-        value: "🌨️",
+        value: '🌨️',
         originalNumericCode: 71,
-        description: "Snow fall: Slight"
+        description: 'Snow fall: Slight'
       };
     case 73:
       return {
-        value: "🌨️",
+        value: '🌨️',
         originalNumericCode: 73,
-        description: "Snow fall: Moderate"
+        description: 'Snow fall: Moderate'
       };
     case 75:
       return {
-        value: "🌨️❄️",
+        value: '🌨️❄️',
         originalNumericCode: 75,
-        description: "Snow fall: Heavy intensity"
+        description: 'Snow fall: Heavy intensity'
       };
     case 77:
       return {
-        value: "❄️",
+        value: '❄️',
         originalNumericCode: 77,
-        description: "Snow grains"
+        description: 'Snow grains'
       };
     case 80:
       return {
-        value: "🌦️",
+        value: '🌦️',
         originalNumericCode: 80,
-        description: "Rain showers: Slight"
+        description: 'Rain showers: Slight'
       };
     case 81:
       return {
-        value: "🌧️🌧️",
+        value: '🌧️🌧️',
         originalNumericCode: 81,
-        description: "Rain showers: Moderate"
+        description: 'Rain showers: Moderate'
       };
     case 82:
       return {
-        value: "🌧️🌧️🌧️",
+        value: '🌧️🌧️🌧️',
         originalNumericCode: 82,
-        description: "Rain showers: Violent"
+        description: 'Rain showers: Violent'
       };
     case 85:
       return {
-        value: "🌨️",
+        value: '🌨️',
         originalNumericCode: 85,
-        description: "Snow showers slight"
+        description: 'Snow showers slight'
       };
     case 86:
       return {
-        value: "🌨️🌨️",
+        value: '🌨️🌨️',
         originalNumericCode: 86,
-        description: "Snow showers heavy"
+        description: 'Snow showers heavy'
       };
     case 95:
       return {
-        value: "🌩️",
+        value: '🌩️',
         originalNumericCode: 95,
-        description: "Thunderstorm: Slight or moderate"
+        description: 'Thunderstorm: Slight or moderate'
       };
     case 96:
       return {
-        value: "⛈️",
+        value: '⛈️',
         originalNumericCode: 96,
-        description: "Thunderstorm with slight hail"
+        description: 'Thunderstorm with slight hail'
       };
     case 99:
       return {
-        value: "⛈️🌨️",
+        value: '⛈️🌨️',
         originalNumericCode: 99,
-        description: "Thunderstorm with heavy hail"
+        description: 'Thunderstorm with heavy hail'
       };
     default:
       return {
-        value: "🤷‍♂️",
+        value: '🤷‍♂️',
         originalNumericCode: weatherCode,
-        description: "Unknown weather code"
+        description: 'Unknown weather code'
       };
   }
 }
