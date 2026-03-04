@@ -31,28 +31,28 @@ function openWeatherWMOToEmoji(weatherCode, daylite) {
       }
       if (!daylite) {
         return {
-          value: "🌤️🌙",
+          value: "🌙☁️",
           originalNumericCode: 1,
           description: "Mainly clear"
         };
       }
     case 2:
       return {
-        value: "☁️",
+        value: "⛅",
         originalNumericCode: 2,
         description: "Partly cloudy"
       };
     case 3:
       if (daylite) {
         return {
-          value: "🌥️",
+          value: "🌥️☁️",
           originalNumericCode: 3,
           description: "Overcast"
         };
       }
       if (!daylite) {
         return {
-          value: "☁️🌙",
+          value: "🌙☁️☁️",
           originalNumericCode: 3,
           description: "Overcast"
         };
@@ -77,13 +77,13 @@ function openWeatherWMOToEmoji(weatherCode, daylite) {
       };
     case 53:
       return {
-        value: "🌧️",
+        value: "🌧️💧",
         originalNumericCode: 53,
         description: "Drizzle: Moderate"
       };
     case 55:
       return {
-        value: "🌧️",
+        value: "🌧️💦",
         originalNumericCode: 55,
         description: "Drizzle: Dense intensity"
       };
@@ -143,13 +143,13 @@ function openWeatherWMOToEmoji(weatherCode, daylite) {
       };
     case 75:
       return {
-        value: "🌨️",
+        value: "🌨️❄️",
         originalNumericCode: 75,
         description: "Snow fall: Heavy intensity"
       };
     case 77:
       return {
-        value: "🌨️",
+        value: "❄️",
         originalNumericCode: 77,
         description: "Snow grains"
       };
@@ -204,7 +204,7 @@ function openWeatherWMOToEmoji(weatherCode, daylite) {
     default:
       return {
         value: "🤷‍♂️",
-        originalNumericCode: -1,
+        originalNumericCode: weatherCode,
         description: "Unknown weather code"
       };
   }
